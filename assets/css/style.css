@@ -16,7 +16,7 @@
   --black-color2: #1D1D1D;
   --title-color: #13141A;
   --text-color: #5E5E5E;
-  --primary-color1: #46D993;
+  --primary-color1: #cdcc10;
 }
 
 /*================================================
@@ -2127,7 +2127,8 @@ header.style-1 {
   padding: 0px 11%;
   transition: all 0.8s ease-out 0s;
   border-bottom: 1px solid #eee;
-  background-color: var(--white-color);
+  background:url('../img/header-bg.jpg') ;
+/*  background-size: cover;*/
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   header.style-1 {
@@ -2581,20 +2582,21 @@ header.style-1 .nav-right .hotline-area .content span {
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
-  color: var(--text-color);
+  color: #fff;
   margin-bottom: 5px;
   display: inline-block;
 }
 header.style-1 .nav-right .hotline-area .content h6 {
   margin-bottom: 0;
   line-height: 1;
+  color: #fff;
 }
 header.style-1 .nav-right .hotline-area .content h6 a {
   font-family: var(--font-montserrat);
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: var(--title-color);
+  color: var(--primary-color1);
   transition: 0.5s;
 }
 header.style-1 .nav-right .hotline-area .content h6 a:hover {
@@ -2715,7 +2717,8 @@ header.style-1 .main-menu ul > li:hover i {
   }
 }
 header.style-1 .main-menu ul > li a {
-  color: var(--title-color);
+/*  color: var(--title-color);*/
+  color: #fff;
   display: block;
   text-transform: capitalize;
   padding: 15px 20px;
@@ -2735,7 +2738,7 @@ header.style-1 .main-menu ul > li a {
 header.style-1 .main-menu ul > li i {
   font-size: 20px;
   text-align: center;
-  color: var(--text-color);
+  color: #fff;
   font-style: normal;
   position: absolute;
   right: -5px;

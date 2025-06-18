@@ -2721,7 +2721,7 @@ header.style-1 .main-menu ul > li a {
   color: #fff;
   display: block;
   text-transform: capitalize;
-  padding: 15px 20px;
+  padding: 15px 3px;
   position: relative;
   font-family: var(--font-montserrat);
   text-transform: uppercase;
@@ -2729,6 +2729,9 @@ header.style-1 .main-menu ul > li a {
   font-size: 13px;
   transition: all 0.5s ease-out 0s;
   position: relative;
+}
+header.style-1 .main-menu ul > li a.drop-down{
+  padding: 15px 18px 15px 3px;
 }
 @media (max-width: 991px) {
   header.style-1 .main-menu ul > li a {
@@ -3090,7 +3093,8 @@ header.style-1 .main-menu ul > li.menu-item-has-children::after {
   top: 15px;
   right: 10px;
   font-size: 14px;
-  color: var(--text-color);
+/*  color: var(--text-color);*/
+  color: var(--white-color);
   transition: all 0.55s ease-in-out;
 }
 @media (max-width: 1199px) {

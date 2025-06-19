@@ -2128,7 +2128,7 @@ header.style-1 {
   padding: 0px 11%;
   transition: all 0.8s ease-out 0s;
   border-bottom: 1px solid #eee;
-  background:url('../img/header-bg.jpg') ;
+/*  background:url('../img/header-bg.jpg') ;*/
 /*  background-size: cover;*/
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
@@ -2583,7 +2583,7 @@ header.style-1 .nav-right .hotline-area .content span {
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
-  color: #fff;
+/*  color: #fff;*/
   margin-bottom: 5px;
   display: inline-block;
 }
@@ -2718,8 +2718,8 @@ header.style-1 .main-menu ul > li:hover i {
   }
 }
 header.style-1 .main-menu ul > li a {
-/*  color: var(--title-color);*/
-  color: #fff;
+  color: var(--title-color);
+/*  color: #fff;*/
   display: block;
   text-transform: capitalize;
   padding: 15px 3px;
@@ -24527,3 +24527,5 @@ button {
 .range-wrapper2 .valus .min-value input::placeholder, .range-wrapper2 .valus .max-value input::placeholder {
   color: rgba(19, 20, 26, 0.5);
 }/*# sourceMappingURL=style.css.map */
+
+

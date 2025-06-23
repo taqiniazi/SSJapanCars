@@ -2152,6 +2152,9 @@ header.style-1.sticky {
   background-color: var(--white-color);
   z-index: 999;
 }
+header.style-1.sticky .company-logo {
+    max-width: 80px;
+}
 @keyframes smooth-header {
   0% {
     transform: translateY(-30px);

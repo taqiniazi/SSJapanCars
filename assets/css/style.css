@@ -24526,6 +24526,24 @@ button {
 }
 .range-wrapper2 .valus .min-value input::placeholder, .range-wrapper2 .valus .max-value input::placeholder {
   color: rgba(19, 20, 26, 0.5);
-}/*# sourceMappingURL=style.css.map */
+}
 
-
+.available-stock .recent-car-area {
+    background-image: url(../img/inner-page/inquary-form-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 15px;
+}
+.available-stock .recent-car-area .nav-tabs li button{
+  padding: 10px;
+  border-radius: 8px;
+  line-height: 1;
+}
+.available-stock .recent-car-area .nav-tabs li button.active {
+    color: var(--white-color);
+    background-color: var(--title-color);
+}
+.style-1 {
+    padding-inline: 3%;
+}

@@ -16,8 +16,8 @@
   --black-color2: #1D1D1D;
   --title-color: #13141A;
   --text-color: #5E5E5E;
-  --primary-color1: #bc232b;#ea7f85;
-  --footer-color: #ea7f85
+  --primary-color1: #F5C34B;
+  --footer-color: #F5C34B
 }
 
 /*================================================
@@ -718,7 +718,7 @@ p {
   font-family: var(--font-open-sans);
   font-weight: 600;
   font-size: 15px;
-  color: var(--white-color);
+  color: var(--text-color);
   padding: 11px 28px;
   display: inline-flex;
   align-items: center;
@@ -730,8 +730,8 @@ p {
   z-index: 1;
 }
 .primary-btn3 svg {
-  fill: var(--white-color);
-  stroke: var(--white-color);
+  fill: var(--text-color);
+  stroke: var(--text-color);
   transition: 0.5s;
 }
 .primary-btn3::after {
@@ -767,6 +767,7 @@ p {
 }
 .primary-btn3:hover svg {
   fill: var(--white-color);
+  stroke: var(--white-color);
 }
 .primary-btn3:hover.two svg path:first-child {
   fill: none;
@@ -916,7 +917,8 @@ p {
 
 .nice-select {
   width: 100%;
-  background: #F3F3F3;
+/*  background: #F3F3F3;*/
+  background: #fff;
   border-radius: 5px;
   height: 50px;
   display: flex;
@@ -925,7 +927,7 @@ p {
   padding: 0px 25px;
   outline: none !important;
   box-shadow: none !important;
-  border: 1px solid #F3F3F3;
+  border: 1px solid #ced4da;
 }
 .nice-select::after {
   height: 8px;
@@ -11183,11 +11185,11 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   transition: 0.35s;
 }
 .product-card .product-content .content-btm .view-btn2 svg path {
-  fill: var(--primary-color1);
+  fill: var(--title-color1);
 }
 .product-card .product-content .content-btm .view-btn2 svg path:first-child {
   fill: none;
-  stroke: var(--primary-color1);
+  stroke: #000;
 }
 .product-card .product-content .content-btm .view-btn2:hover {
   color: var(--primary-color1);
@@ -12668,6 +12670,12 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 /*=====================================
      14. Testimonial Section
 ========================================*/
+.customar-feedback-area{
+  background-image: url(../img/home1/why-choose-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 .customar-feedback-area .customer-feedback-left {
   background-image: url(../img/home1/customer-feedbac-bg1.png);
   background-repeat: no-repeat;
@@ -18069,7 +18077,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-st-card1:hover .product-img .product-price span {
   background-color: var(--primary-color1);
-  color: var(--white-color);
+/*  color: var(--text-color);*/
 }
 .product-st-card1:hover .product-img .slider-btn-group {
   opacity: 1;
@@ -20412,7 +20420,6 @@ button {
   margin-bottom: 0;
 }
 .car-details-sidebar .contact-info .single-contact a {
-  color: var(--white-color);
   font-family: var(--font-montserrat);
   font-size: 14px;
   font-weight: 600;
@@ -20484,7 +20491,7 @@ button {
   display: block;
   margin-bottom: 10px;
 }
-.car-details-sidebar .inquiry-form .form-inner input {
+.car-details-sidebar .inquiry-form .form-inner input, .form-control {
   border-radius: 5px;
   background: var(--white-color);
   color: var(--text-color);
@@ -20495,13 +20502,16 @@ button {
   width: 100%;
   padding: 10px 20px;
 }
-.car-details-sidebar .inquiry-form .form-inner input::-moz-placeholder {
+.car-details-sidebar .inquiry-form .form-inner input::-moz-placeholder,
+input::-moz-placeholder {
   color: rgba(19, 20, 26, 0.5);
 }
-.car-details-sidebar .inquiry-form .form-inner input::placeholder {
+.car-details-sidebar .inquiry-form .form-inner input::placeholder,
+input::placeholder {
   color: rgba(19, 20, 26, 0.5);
 }
-.car-details-sidebar .inquiry-form .form-inner textarea {
+.car-details-sidebar .inquiry-form .form-inner textarea,
+textarea.form-control {
   border-radius: 5px;
   background: var(--white-color);
   color: var(--text-color);
@@ -20514,10 +20524,12 @@ button {
   border: none;
   min-height: 100px;
 }
-.car-details-sidebar .inquiry-form .form-inner textarea::-moz-placeholder {
+.car-details-sidebar .inquiry-form .form-inner textarea::-moz-placeholder,
+textarea::-moz-placeholder {
   color: rgba(19, 20, 26, 0.5);
 }
-.car-details-sidebar .inquiry-form .form-inner textarea::placeholder {
+.car-details-sidebar .inquiry-form .form-inner textarea::placeholder,
+textarea::placeholder {
   color: rgba(19, 20, 26, 0.5);
 }
 .car-details-sidebar .inquiry-form .form-inner .primary-btn3 {
@@ -21546,13 +21558,13 @@ button {
   padding-right: 35px;
 }
 .product-page .show-item-and-filte .filter-atra .nice-select::after {
-  border-color: var(--white-color);
+  border-color: var(--text-color);
   right: 18px;
   height: 7px;
   width: 7px;
 }
 .product-page .show-item-and-filte .filter-atra .nice-select .current {
-  color: var(--white-color);
+/*  color: var(--white-color);*/
   font-weight: 600;
   font-size: 13px;
 }
@@ -21581,7 +21593,7 @@ button {
   font-weight: 600;
 }
 .product-page .filter-area .title-and-close-btn .close-btn svg {
-  fill: var(--text-color);
+/*  fill: var(--text-color);*/
 }
 .product-page .filter-area .tags ul {
   margin: 0;

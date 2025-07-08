@@ -16,7 +16,8 @@
   --black-color2: #1D1D1D;
   --title-color: #13141A;
   --text-color: #5E5E5E;
-  --primary-color1: #cdcc10;
+  --primary-color1: #bc232b;#ea7f85;
+  --footer-color: #ea7f85
 }
 
 /*================================================
@@ -636,7 +637,7 @@ p {
   white-space: nowrap;
 }
 .primary-btn1 svg {
-  fill: var(--title-color);
+  fill: var(--white-color);
   transition: 0.5s;
 }
 .primary-btn1::after {
@@ -671,7 +672,7 @@ p {
   font-family: var(--font-open-sans);
   font-weight: 600;
   font-size: 15px;
-  color: #13141A;
+  color: #fff;
   white-space: nowrap;
   padding: 10px 20px;
   display: inline-flex;
@@ -717,7 +718,7 @@ p {
   font-family: var(--font-open-sans);
   font-weight: 600;
   font-size: 15px;
-  color: #13141A;
+  color: var(--white-color);
   padding: 11px 28px;
   display: inline-flex;
   align-items: center;
@@ -729,7 +730,8 @@ p {
   z-index: 1;
 }
 .primary-btn3 svg {
-  fill: var(--title-color);
+  fill: var(--white-color);
+  stroke: var(--white-color);
   transition: 0.5s;
 }
 .primary-btn3::after {
@@ -887,6 +889,7 @@ p {
 .view-btn::after {
   content: "";
   border: 1px solid var(--primary-color1);
+  color: var(--white-color);
   position: absolute;
   left: 0;
   top: 0;
@@ -903,7 +906,10 @@ p {
   content: "";
   transform: rotate(0deg);
 }
-
+.view .list-grid-btn-group i{
+  color: #888;
+  font-size: 18px;
+}
 .select {
   margin-bottom: 25px;
 }
@@ -1057,7 +1063,22 @@ p {
   margin: auto;
   animation: circle 2s linear infinite;
 }
-
+.close_it {
+    position: absolute;
+    z-index: 8;
+    top: -13px;
+    right: -15px;
+    border: 1px solid #bc232b;
+    opacity: 1;
+    padding: 8px;
+    background: #fff;
+    line-height: 1.25;
+    border-radius: 50%;
+    color: #bc232b;
+}
+.close_it i{
+  line-height: 1;
+}
 .circle-border .moving-circle:nth-child(2) {
   width: 10px;
   height: 10px;
@@ -11240,6 +11261,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .product-card.style-2 .product-content .launch-btn .primary-btn1 {
   font-family: var(--font-montserrat);
+  color: #fff;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -11273,6 +11295,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   font-size: 20px;
   font-weight: 700;
   transition: 0.35s;
+  color: #fff;
 }
 .product-card.style-2.compare .close-btn:hover {
   background-color: red;
@@ -13207,7 +13230,7 @@ footer .footer-widget .widget-title {
 }
 footer .footer-widget .widget-title h5 {
   margin-bottom: 0;
-  color: var(--white-color);
+  color: var(--footer-color);
   font-size: 20px;
   font-family: var(--font-montserrat);
   font-weight: 600;
@@ -13330,7 +13353,7 @@ footer .footer-center .contact-area .hotline-area .icon::after {
   transform: translateY(-50%);
 }
 footer .footer-center .contact-area .hotline-area .icon svg {
-  fill: var(--primary-color1);
+  fill: #ea7f85;
 }
 footer .footer-center .contact-area .hotline-area .content {
   line-height: 1;
@@ -13349,7 +13372,7 @@ footer .footer-center .contact-area .hotline-area .content h6 {
   line-height: 1;
 }
 footer .footer-center .contact-area .hotline-area .content h6 a {
-  color: var(--primary-color1);
+  color: var(--footer-color);
   font-size: 20px;
   font-family: var(--font-montserrat);
   font-weight: 600;
@@ -13459,11 +13482,11 @@ footer .footer-btm .social-area ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-color1);
+  color: var(--footer-color);
   transition: 0.35s;
 }
 footer .footer-btm .social-area ul li a:hover {
-  color: var(--title-color);
+  color: var(--white-color);
   background-color: var(--primary-color1);
   border-color: var(--primary-color1);
 }
@@ -18046,6 +18069,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
 }
 .product-st-card1:hover .product-img .product-price span {
   background-color: var(--primary-color1);
+  color: var(--white-color);
 }
 .product-st-card1:hover .product-img .slider-btn-group {
   opacity: 1;
@@ -20388,7 +20412,7 @@ button {
   margin-bottom: 0;
 }
 .car-details-sidebar .contact-info .single-contact a {
-  color: var(--title-color);
+  color: var(--white-color);
   font-family: var(--font-montserrat);
   font-size: 14px;
   font-weight: 600;
@@ -21522,13 +21546,13 @@ button {
   padding-right: 35px;
 }
 .product-page .show-item-and-filte .filter-atra .nice-select::after {
-  border-color: var(--title-color);
+  border-color: var(--white-color);
   right: 18px;
   height: 7px;
   width: 7px;
 }
 .product-page .show-item-and-filte .filter-atra .nice-select .current {
-  color: var(--title-color);
+  color: var(--white-color);
   font-weight: 600;
   font-size: 13px;
 }
@@ -21623,7 +21647,7 @@ button {
 }
 .pagination-and-next-prev .pagination ul li.active a {
   border-color: var(--primary-color1);
-  color: var(--title-color);
+  color: var(--white-color);
   background-color: var(--primary-color1);
 }
 .pagination-and-next-prev .next-prev-btn ul {

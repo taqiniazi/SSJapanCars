@@ -18,7 +18,7 @@
   --text-color: #13141A;
   --primary-color1: #f8b20b;
   --primary-color2: #0A2357;
-  --footer-color: #F5C34B;
+  --footer-color: #f8b20b;
 }
 
 /*================================================
@@ -639,7 +639,7 @@ p {
   white-space: nowrap;
 }
 .primary-btn1 svg {
-  fill: var(--white-color);
+  fill: var(--title-color);
   transition: 0.5s;
 }
 .primary-btn1::after {
@@ -11268,7 +11268,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 }
 .product-card.style-2 .product-content .launch-btn .primary-btn1 {
   font-family: var(--font-montserrat);
-  color: #fff;
+  color: var(--title-color);
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -11277,6 +11277,10 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   width: 100%;
   justify-content: center;
 }
+.product-card.style-2 .product-content .launch-btn .primary-btn1:hover{
+  color: var(--white-color);
+}
+
 .product-card.style-2.compare {
   border-radius: 10px;
   border: 1px solid rgba(238, 238, 238, 0.93);

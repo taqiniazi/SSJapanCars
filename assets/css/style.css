@@ -15,9 +15,10 @@
   --black-color: #000;
   --black-color2: #1D1D1D;
   --title-color: #13141A;
-  --text-color: #5E5E5E;
-  --primary-color1: #F5C34B;
-  --footer-color: #F5C34B
+  --text-color: #13141A;
+  --primary-color1: #f8b20b;
+  --primary-color2: #0A2357;
+  --footer-color: #F5C34B;
 }
 
 /*================================================
@@ -413,7 +414,8 @@ p {
       top: 0;
       width: 100%;
       z-index: 9999999;
-      background:url("../img/header-bg.jpg");
+      background:url(../img/home1/bannar1-bg.png), linear-gradient(#FAFAFA, #FAFAFA);
+      background-size:cover;
 /*      background: #0E1D40;*/
   }
 
@@ -488,7 +490,7 @@ p {
   }
 
   .handle-preloader .loader-section {
-      background-color: #ffffff;
+      background-color: #0a2357;
       height: 100%;
       position: fixed;
       top: 0;
@@ -501,11 +503,11 @@ p {
   }
 
   .handle-preloader .animation-preloader .txt-loading .letters-loading:before {
-      color: #ffffff;
+      color: #0a2357;
   }
 
   .handle-preloader .animation-preloader .spinner {
-      border: 3px solid #ffffff;
+      border: 3px solid #0a2357;
       border-top-color: rgba(255, 255, 255, 0.5);
   }
 
@@ -718,7 +720,7 @@ p {
   font-family: var(--font-open-sans);
   font-weight: 600;
   font-size: 15px;
-  color: var(--text-color);
+  color: var(--title-color);
   padding: 11px 28px;
   display: inline-flex;
   align-items: center;
@@ -730,8 +732,8 @@ p {
   z-index: 1;
 }
 .primary-btn3 svg {
-  fill: var(--text-color);
-  stroke: var(--text-color);
+  fill: var(--title-color);
+  stroke: var(--title-color);
   transition: 0.5s;
 }
 .primary-btn3::after {
@@ -2151,6 +2153,7 @@ header.style-1 {
   padding: 0px 11%;
   transition: all 0.8s ease-out 0s;
   border-bottom: 1px solid #eee;
+  background-color:transparent;
 /*  background:url('../img/header-bg.jpg') ;*/
 /*  background-size: cover;*/
 }
@@ -2172,7 +2175,9 @@ header.style-1.sticky {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   box-sizing: border-box;
-  background-color: var(--white-color);
+/*  background-color: var(--white-color);*/
+
+  background: url(../img/home1/bannar1-bg.png), linear-gradient(#FAFAFA, #FAFAFA);
   z-index: 999;
 }
 header.style-1.sticky .company-logo {
@@ -10163,7 +10168,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   background-image: url(../img/home1/bannar1-bg.png), linear-gradient(#FAFAFA, #FAFAFA);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 95px 0;
+  margin-top:-160px;
 }
 .banner-section1 .banner-content {
   max-width: 705px;
@@ -13208,7 +13213,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
      16. Footer Section
 ========================================*/
 footer {
-  background: var(--title-color);
+  background: var(--primary-color2);
 }
 footer .footer-top {
   padding: 90px 11%;
@@ -13361,7 +13366,7 @@ footer .footer-center .contact-area .hotline-area .icon::after {
   transform: translateY(-50%);
 }
 footer .footer-center .contact-area .hotline-area .icon svg {
-  fill: #ea7f85;
+  fill: var(--footer-color);
 }
 footer .footer-center .contact-area .hotline-area .content {
   line-height: 1;
@@ -19162,7 +19167,7 @@ footer.style-3 .footer-btm .social-area ul li a:hover {
   color: var(--title-color);
 }
 .inner-page-banner .banner-main-content-wrap {
-  padding: 80px 0;
+  padding: 165px 0 100px;
 }
 .inner-page-banner .banner-content {
   max-width: 705px;
@@ -21122,11 +21127,13 @@ textarea::placeholder {
 
 .product-search-area {
   margin-top: -70px;
+  background-color: #0A2357;
+  color: #fff;
 }
 .product-search-area form {
   border-radius: 10px;
   border: 1px solid rgba(29, 29, 29, 0.1);
-  background: var(--white-color);
+/*  background: var(--white-color);*/
   padding: 22px 40px 30px;
 }
 @media (max-width: 1199px) {
@@ -21143,7 +21150,7 @@ textarea::placeholder {
   padding: 10px 28px;
 }
 .product-search-area form .form-inner label {
-  color: var(--black-color2);
+/*  color: var(--black-color2);*/
   font-family: var(--font-montserrat);
   font-size: 14px;
   font-weight: 600;

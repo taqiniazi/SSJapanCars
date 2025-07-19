@@ -392,6 +392,7 @@
 				prevEl: prevBtn,
 			},
 		});
+
 		nextBtn.addEventListener('click', () => {
 			swiper.slideNext();
 		});
@@ -401,7 +402,22 @@
 		});
 	});
 
-
+	// var swiper = new Swiper(".product-img-slider", {
+    //   spaceBetween: 10,
+    //   slidesPerView: 4,
+    //   freeMode: true,
+    //   watchSlidesProgress: true,
+    // });
+    // var swiper2 = new Swiper(".product-img-slider2", {
+    //   spaceBetween: 10,
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    //   thumbs: {
+    //     swiper: swiper,
+    //   },
+    // });
 
 
 	// most-search-slider
@@ -572,7 +588,7 @@
 				spaceBetween: 24,
 			},
 			1400: {
-				slidesPerView: 2
+				slidesPerView: 3
 			},
 		}
 	});

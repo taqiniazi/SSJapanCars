@@ -508,7 +508,7 @@
 	});
 	// Compare Car 
 	var swiper = new Swiper(".upcoming-car-slider", {
-		slidesPerView: 3,
+		slidesPerView: 4,
 		speed: 1500,
 		spaceBetween: 25,
 		// autoplay: {
@@ -544,7 +544,7 @@
 				spaceBetween: 24,
 			},
 			1400: {
-				slidesPerView: 3
+				slidesPerView: 4
 			},
 		}
 	});

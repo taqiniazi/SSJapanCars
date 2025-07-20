@@ -729,7 +729,7 @@ p {
 
 .primary-btn3 {
   border-radius: 5px;
-  background-color: var(--primary-color1);
+  background-color: var(--primary-color2);
   font-family: var(--font-open-sans);
   font-weight: 600;
   font-size: 15px;
@@ -2664,7 +2664,7 @@ header.style-1 .nav-right .mobile-menu-btn {
   header.style-1 .nav-right .mobile-menu-btn span {
     height: 2px;
     width: 25px;
-    background-color: var(--title-color);
+    background-color: var(--primary-color1);
     display: flex;
     transition: transform 0.5s ease-in;
     position: absolute;
@@ -2675,7 +2675,7 @@ header.style-1 .nav-right .mobile-menu-btn {
     position: absolute;
     width: 35px;
     height: 2px;
-    background-color: var(--title-color);
+    background-color: var(--primary-color1);
     content: "";
     top: -10px;
     right: 0;
@@ -2686,7 +2686,7 @@ header.style-1 .nav-right .mobile-menu-btn {
     width: 15px;
     height: 2px;
     right: 0;
-    background-color: var(--title-color);
+    background-color: var(--primary-color1);
     content: "";
     top: 10px;
   }
@@ -3262,7 +3262,7 @@ header.style-1 .main-menu .hotline-area .content span {
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
-  color: var(--text-color);
+  color: var(--white-color);
   margin-bottom: 5px;
   display: inline-block;
 }
@@ -3275,7 +3275,7 @@ header.style-1 .main-menu .hotline-area .content h6 a {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: var(--title-color);
+  color: var(--primary-color1);
   transition: 0.5s;
 }
 header.style-1 .main-menu .hotline-area .content h6 a:hover {
@@ -3297,7 +3297,7 @@ header.style-1 .main-menu .hotline-area .content h6 a:hover {
     z-index: 99999;
     height: 100%;
     overflow: auto;
-    background: #fff;
+    background: var(--primary-color2);
     border-right: 1px solid #eee;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in;
@@ -10924,6 +10924,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   border: 1px solid #EEEEEE;
   transition: 0.35s;
   position: relative;
+  height: 100%;
 }
 .product-card .new {
   font-family: var(--font-open-sans);
@@ -13454,22 +13455,7 @@ footer .footer-btm {
 }
 @media (max-width: 1699px) {
   footer .footer-btm {
-    padding: 17px 6%;
-  }
-}
-@media (max-width: 1399px) {
-  footer .footer-btm {
-    padding: 17px 5%;
-  }
-}
-@media (max-width: 1399px) {
-  footer .footer-btm {
-    padding: 17px 3%;
-  }
-}
-@media (max-width: 991px) {
-  footer .footer-btm {
-    padding: 17px 2%;
+    padding: 17px 0;
   }
 }
 @media (max-width: 767px) {
@@ -21163,7 +21149,7 @@ textarea::placeholder {
 }
 @media (max-width: 1199px) {
   .product-search-area form {
-    padding: 22px 20px 30px;
+    padding: 22px 5px 30px;
   }
 }
 .product-search-area form .form-inner {
@@ -23983,6 +23969,7 @@ textarea::placeholder {
 .contact-page .single-location {
   border-radius: 10px;
   border: 1px solid #EEE;
+  background:var(--white-color);
   padding: 40px;
 }
 @media (max-width: 767px) {
@@ -24083,6 +24070,7 @@ textarea::placeholder {
   padding: 30px 50px;
   display: flex;
   align-items: center;
+  background-color: var(--white-color);
   gap: 15px;
   position: relative;
 }
@@ -24153,7 +24141,7 @@ textarea::placeholder {
   line-height: 25px;
 }
 .contact-page .service-available p {
-  color: var(--text-color);
+  color: var(--white-color);
   font-family: var(--font-open-sans);
   font-size: 14px;
   font-weight: 400;
@@ -24163,7 +24151,7 @@ textarea::placeholder {
   font-weight: 600;
 }
 .contact-page .section-title h4 {
-  color: var(--title-color);
+  color: var(--white-color);
   font-family: var(--font-montserrat);
   font-size: 26px;
   font-weight: 700;
@@ -24178,6 +24166,9 @@ textarea::placeholder {
 @media (max-width: 767px) {
   .contact-page .inquiry-form {
     padding: 45px 20px 50px;
+  }
+  .product-search-area{
+    margin-top: 0;
   }
 }
 .contact-page .inquiry-form .title {

@@ -11032,7 +11032,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   }
 }
 .product-card .product-content {
-  padding: 15px;
+  padding: 15px 5px;
 }
 @media (max-width: 1499px) {
   .product-card .product-content {
@@ -11243,7 +11243,7 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   line-height: 22px;
   color: var(--title-color);
 }
-.product-card.style-2 .product-content .content-top .company-logo {
+/*.product-card.style-2 .product-content .content-top .company-logo {
   height: 56px;
   width: 62px;
   background: #FFFFFF;
@@ -11254,6 +11254,20 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   justify-content: center;
   transform: translateY(-35px);
   z-index: 99;
+}*/
+.product-card.style-2 .product-content .content-top .company-logo {
+    height: 56px;
+    width: 62px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-35px);
+    z-index: 99;
+    position: absolute;
+    right: 9px;
 }
 .product-card.style-2 .product-content .launch-date {
   margin-bottom: 30px;
@@ -12797,7 +12811,8 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   border-radius: 10px;
   border: 1px solid transparent;
   transition: 0.35s;
-  min-height: 310px;
+  min-height: 260px;
+  display: flex;
 }
 .customar-feedback-area .customer-feedback-right .feedback-card .feedback-top {
   display: flex;
@@ -12837,10 +12852,15 @@ header.style-6 .main-menu .hotline-area .content h6 a {
   line-height: 19px;
   color: var(--title-color);
 }
+.customar-feedback-area .customer-feedback-right .feedback-card .testmonial_user .test_user{
+  max-width: 100px;
+  margin-right: 15px;
+  border-radius: 8px;
+}
 .customar-feedback-area .customer-feedback-right .feedback-card p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 1.5;
   color: var(--text-color);
 }
 .customar-feedback-area .customer-feedback-right .feedback-card .author-name h6 {
@@ -12974,6 +12994,13 @@ header.style-6 .main-menu .hotline-area .content h6 a {
 @media (max-width: 576px) {
   .trusted-partner-section .partner-slider .js-marquee {
     gap: 40px;
+  }
+  .logo_area{
+    display: flex;
+    gap: 10px;
+  }
+  .footer-btm-menu.footer-btm{
+    justify-content:start;
   }
 }
 
@@ -20506,7 +20533,8 @@ button {
   display: block;
   margin-bottom: 10px;
 }
-.car-details-sidebar .inquiry-form .form-inner input, .form-control {
+.car-details-sidebar .inquiry-form .form-inner input, .form-control,
+.select2-container--default .select2-selection--single .select2-selection__rendered{
   border-radius: 5px;
   background: var(--white-color);
   color: var(--text-color);
@@ -20517,9 +20545,27 @@ button {
   width: 100%;
   padding: 10px 20px;
 }
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 48px;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+  background-color: #ddd;
+  color: #000;
+}
+.select2-container--open .select2-dropdown{
+  top: 18px;
+}
+.select2-container--default .select2-results__option--selected {
+    background-color: #0a2357;
+    color: #fff;
+}
 .car-details-sidebar .inquiry-form .form-inner input::-moz-placeholder,
 input::-moz-placeholder {
   color: rgba(19, 20, 26, 0.5);
+}
+.select2-results {
+    display: block;
+    color: #000;
 }
 .car-details-sidebar .inquiry-form .form-inner input::placeholder,
 input::placeholder {

@@ -162,7 +162,7 @@
 	});
 
 	// niceSelect
-	$('select').niceSelect();
+	$('.select2').select2();
 
 	jQuery(window).on('load', function () {
         new WOW().init();

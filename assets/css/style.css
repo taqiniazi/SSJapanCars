@@ -64,10 +64,6 @@ body.home-5 {
     padding-right: 0%;
 
   }
-  .close_it {
-    top: 10px;
-    right: 10px;
-  }
 }
 
 h1,
@@ -24676,4 +24672,10 @@ textarea::placeholder {
 }
 .carousel-indicators [data-bs-target]{
   text-indent: unset;
+}
+@media (max-width: 576px) {
+  .close_it {
+    top: 10px;
+    right: 10px;
+  }
 }

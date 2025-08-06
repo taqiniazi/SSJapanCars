@@ -24678,4 +24678,7 @@ textarea::placeholder {
     top: 10px;
     right: 10px;
   }
+  .product-card .product-content .content-btm .view-btn2{
+    display: inline-block;
+  }
 }
